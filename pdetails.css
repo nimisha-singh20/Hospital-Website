@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+/* 
+:root{
+--success-color:#e4f9ed;
+--error-color: #e74c3c;
+} */
+
+*{
+box-sizing: border-box;
+}
+body{
+background-color: rgba(210, 238, 255, 0.79);
+font-family:'Open Sans',sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+margin: 0;
+padding-top: 3%;
+padding-bottom: 3%;
+}
+.container{
+background-color: #00000014;
+border-radius: 5px;
+box-shadow: 0 2px 10px rgba(0,0,0, 0.3);
+width: 600px;
+padding-bottom: 2%;
+padding-top: 1%;
+}
+h2{
+text-align: center;
+margin: 0 0 20px;
+}
+.form{
+
+padding: 30px 40px;
+
+}
+.form-control{
+
+margin-bottom: 10px;
+padding-bottom: 20px;
+position: relative;
+}
+
+.form-control input{
+border: 2px solid #110101;
+border-radius: 4px;
+width: 100%;
+padding: 10px;
+font-size: 14px;
+
+}
+
+
+/* Add this CSS to your existing pdetails.css or create a new CSS file */
+
+/* Reset default styles for buttons */
+input[type="reset"],
+input[type="submit"] {
+  background-color: rgb(93, 157, 217); /* Blue color, you can customize */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style on hover */
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover, you can customize */
+}
+
+/* Adjust margin for better spacing */
+.formbutton {
+  margin-top: 20px;
+  
+}
+
+/* Style for Disease Type dropdown */
+.form-control select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #110101;
+    border-radius: 4px;
+    appearance: none; /* Remove default arrow in Firefox */
+    -webkit-appearance: none; /* Remove default arrow in Webkit browsers */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23110101" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); /* Add custom arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    cursor: pointer;
+  }
+  
+  .form-control select:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight border on focus */
+  }
+  
+  /* Style for Disease Type dropdown options */
+  .form-control select option {
+    font-size: 14px;
+  }
+  
+/* Add more styling as needed */

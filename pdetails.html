@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pdetails.css">
+  <title>Appointment Booking Form</title>
+</head>
+<body>
+  <div class="container">
+    <form action="#" name="AppointmentBookingForm" onsubmit="return validate();">
+      <table cellpadding="2" width="90%" align="center" cellspacing="2">
+        <tr class="form-control">
+          <td colspan=2>
+            <h2>Appointment Booking</h2>
+          </td>
+        </tr>
+        <tr class="form-control">
+          <td>Full Name</td>
+          <td><input type="text" name="patientName" id="patientName" size="30" required></td>
+        </tr>
+        <tr class="form-control">
+          <td>Age</td>
+          <td><input type="text" name="patientAge" id="patientAge" size="30" required></td>
+        </tr>
+        <tr class="form-control">
+          <td>Guardian/Family Name</td>
+          <td><input type="text" name="familyName" id="familyName" size="30" required></td>
+        </tr>
+        <tr class="form-control">
+          <td>Postal Address</td>
+          <td><input type="text" name="postalAddress" id="postalAddress" size="30" required></td>
+        </tr>
+        <tr class="form-control">
+          <td>Personal Address</td>
+          <td><input type="text" name="personalAddress" id="personalAddress" size="30" required></td>
+        </tr>
+        <tr class="form-control">
+          <td>Sex</td>
+          <td>
+            <input type="radio" name="sex" value="Male" required> Male
+            <input type="radio" name="sex" value="Female" required> Female
+            <input type="radio" name="sex" value="Others" required> Others
+          </td>
+        </tr>
+        <tr class="form-control">
+          <td>PinCode</td>
+          <td><input type="text" name="pincode" id="pincode" size="30" required></td>
+        </tr>
+        <tr class="form-control">
+          <td>Email Id</td>
+          <td><input type="email" name="emailId" id="emailId" size="30" required></td>
+        </tr>
+        <tr class="form-control">
+          <td>Note</td>
+          <td><textarea name="note" id="note" rows="4" cols="30"></textarea></td>
+        </tr>
+        <tr class="form-control">
+          <td>Patient MobileNo: (+91)</td>
+          <td><input type="tel" name="patientMobileNo" id="patientMobileNo" size="30" required></td>
+        </tr>
+        <tr class="form-control">
+          <td>Family MobileNo: (+91)</td>
+          <td><input type="tel" name="familyMobileNo" id="familyMobileNo" size="30" required></td>
+        </tr>
+        <!-- Disease Type -->
+<tr class="form-control">
+    <td>Disease Type</td>
+    <td>
+      <select name="diseaseType" id="diseaseType" required>
+        <option value="" disabled selected>Select Disease Type</option>
+        <option value="Skin">Skin</option>
+        <option value="Injury">Injury</option>
+        <option value="Orthopedic">Orthopedic</option>
+        <option value="Respiratory">Respiratory</option>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Gastroenterology">Gastroenterology</option>
+        <option value="Neurology">Neurology</option>
+        <option value="Ophthalmology">Ophthalmology</option>
+        <option value="Ophthalmology">Others</option>
+      </select>
+    </td>
+  </tr>
+  
+        <tr class="form-control">
+          <td>Preferred Date for Appointment</td>
+          <td><input type="date" name="appointmentDate" id="appointmentDate" required></td>
+        </tr>
+        <tr class="form-control">
+          <td>Preferred Time for Appointment</td>
+          <td><input type="time" name="appointmentTime" id="appointmentTime" required></td>
+        </tr>
+        <tr class="formbutton">
+          <td><input type="reset"></td>
+          <td colspan="2"><input type="submit" value="Book Appointment" /></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <script src="p.js"></script>
+</body>
+</html>
